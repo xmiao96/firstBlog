@@ -1,11 +1,58 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
     <head>
-        <title>Xin's blog</title>
+        <title>Xin's Blog</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     </head>
     <body>
-        <header>
-            <h1><a href="/">This is blog home page</a></h1>
-        </header>
+        <div background="image">
+      <nav>
+        <div class="nav-wrapper blue darken-2">
+          <a href="#" class="brand-logo right">Xin Miao</a>
+          <ul id="nav" class="left hide-on-med-and-down">
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#experi">Experiences</a></li>
+            <li><a href="#proj">Project</a></li>
+              <li><a href="#skill">Skill Set</a></li>
+          </ul>
+        </div>
+      </nav>
+            <div id="main" class="container light-blue darken-4">
+                    <div id="intro" class="blue lighten-4">
+                        <p class="z-depth-3">
+                            <h3>Introduction</h3>
+                            <p>Hi, I am Xin. This is my personal blog to let people know me. I am striving for becoming a full-stack engineer.
+                                Currently, I am focusing on the front-end and back-end development. I had practical experiences in Computer Vision, Machine Learning, and Data-related field.</p>
+                        </p>
+                    </div>
+
+                  <div id="experi" class="blue lighten-3">
+                        <p class="z-depth-3">
+                            <h3>Experiences</h3>
+                      <div class="card-panel hoverable"><h6>Nanjing Qizheng Information Technology Co., Ltd</h6><p>Hoverable Card Panel</p></div>
+                          <div class="card-panel hoverable"> Hoverable Card Panel</div>
+                          <div class="card-panel hoverable"> Hoverable Card Panel</div>
+                        </p>
+                    </div>
+
+                  <div id="proj" class="blue lighten-4">
+                        <p class="z-depth-3">
+                        <h3>Projects</h3>
+                            <p>This is Project</p>
+                        </p>
+                    </div>
+
+                  <div id="skill" class="blue lighten-3">
+                        <p class="z-depth-3">
+                        <h3>Skill Set</h3>
+                            <p>This is Skill Set</p>
+                        </p>
+                    </div>
+            </div>
+        </div>
     </body>
 </html>
