@@ -1,0 +1,8 @@
+
+body {
+   background-image: url("/static/images/background.jpg");
+   opacity: 0.94;
+   max-width: 100%;
+   max-height: 100%;
+   margin: auto;
+}
